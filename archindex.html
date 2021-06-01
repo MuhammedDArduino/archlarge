@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArchLarge</title>
+</head>
+<script>
+	function sleep(ms) {
+  		return new Promise(resolve => setTimeout(resolve, ms));
+	}
+	async function progress1() {
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...   %5 [@------------------] 99 years";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %10 [@@-----------------] 9 years";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %15 [@@@----------------] 1 year";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %20 [@@@@---------------] 9 months";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %25 [@@@@@--------------] 6 months";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %30 [@@@@@@-------------] 3 months";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %35 [@@@@@@@------------] 1 month";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %40 [@@@@@@@@-----------] 3 weeks";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %45 [@@@@@@@@@----------] 1 week";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %50 [@@@@@@@@@@---------] 6 days";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %55 [@@@@@@@@@@@--------] 3 days";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %60 [@@@@@@@@@@@@-------] 1 day";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %65 [@@@@@@@@@@@@@------] 23 hours";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %70 [@@@@@@@@@@@@@@-----] 9 hours";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %75 [@@@@@@@@@@@@@@@----] 6 hours";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %80 [@@@@@@@@@@@@@@@@---] 3 hours";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %90 [@@@@@@@@@@@@@@@@@--] 1 hour";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading...  %95 [@@@@@@@@@@@@@@@@@@-] 30 minutes";
+		await sleep(500);
+		document.getElementById("search").innerHTML = "Wait a minute, search engine loading... %100 [@@@@@@@@@@@@@@@@@@@] Done!";
+		await sleep(1000);
+		document.getElementById("hello").innerHTML = "                   Welcome, User. You can want some help or search anything."
+		document.getElementById("archlog").innerHTML = `                          _____   _____ _    _ _               _____   _____ ______
+		    /\\   |  __ \\ / ____| |  | | |        /\\   |  __ \\ / ____|  ____|
+		   /  \\  | |__) | |    | |__| | |       /  \\  | |__) | |  __| |__   
+		  / /\\ \\ |  _  /| |    |  __  | |      / /\\ \\ |  _  /| | |_ |  __|
+		 / ____ \\| | \\ \\| |____| |  | | |____ / ____ \\| | \\ \\| |__| | |____
+		/_/    \\_\\_|  \\_\\\\_____|_|  |_|______/_/    \\_\\_|  \\_\\\\_____|______|
+		                                   Always learn a thing from previous breed.`;
+		document.getElementById("searchtext").innerHTML = "(S)earch or (h)elp?"
+	}
+	progress1();
+	document.getElementById('searchform').onsubmit = function() {
+    	window.location = 'http://www.google.com/search?q=site:archlarge ' + document.getElementById('test').value;
+    	return false;
+	}
+</script>
+<style>
+	body {
+		background-color: black;
+	}
+	#search {
+		color: white;
+		font-family: Courier;
+	}
+	#archlog {
+		color: white;
+		font-family: Courier;
+	}
+</style>
+<body>
+	<span style="color: white; white-space: pre;">                            ███    <span style="font-family: Courier;">MUHAMMEDD</span>
+	<span style="color: grey; white-space: pre;">███              <span style="color: white;">█</span>       <span style="color: white; font-family: Courier;">PROJECTS</span></span>
+	<span style="color: blue;"><span style="color: grey;">███</span>█<span style="color: grey;">███</span>███    <span style="color: white; font-family: Courier;">HTML</span></span>
+	<span style="color: blue;">██████████</span>
+	<span style="color: blue;">██████████</span>
+	<span style="color: #262626; white-space: pre;">  ███       ███  </span>
+	<div id="search" style="color: yellow;">Wait a minute, search engine loading...   %0 [-------------------] 999 years</div>
+	<div id="hello" style="color: green; font-family: Courier;"></div><div id="archlog" style="color: blue; white-space: pre;"></div><br><div id="searchtext" style="color: red; font-family: Courier;"></div><form id="searchform" class="search2" method="get" action="archs.php" /><input class="search2" id="test" type="text" name="search" size="10" maxlength="255"/>
+</body>
+</html>
